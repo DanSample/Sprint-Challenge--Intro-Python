@@ -31,9 +31,7 @@ def cityreader(cities=[]):
         name, _, _, lat, lon, _, _, _, _ = d
         city = City(name, float(lat), float(lon))
         cities.append(city)
-    # for row in reader:
-    #   if row != 0: 
-    #     cities.append(row[1:-1])
+    
     
     return cities
 
